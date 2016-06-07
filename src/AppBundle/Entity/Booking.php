@@ -117,7 +117,7 @@ class Booking
 
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Field", inversedBy="booking")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Field", inversedBy="bookings")
      * @ORM\JoinColumn(name="field_id", referencedColumnName="id", onDelete="CASCADE")
      */
     private $field_booking;

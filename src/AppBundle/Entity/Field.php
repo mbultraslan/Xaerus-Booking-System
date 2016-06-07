@@ -161,7 +161,7 @@ class Field
     /**
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\Booking", mappedBy="field_booking")
      */
-    private $booking;
+    private $bookings;
 
 
     public function __construct()

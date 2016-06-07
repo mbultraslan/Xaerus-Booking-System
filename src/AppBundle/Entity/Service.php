@@ -73,7 +73,7 @@ class Service
     }
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Invoice", inversedBy="service")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Invoice", inversedBy="services")
      * @ORM\JoinColumn(name="invoice_id", referencedColumnName="id", onDelete="CASCADE")
      */
     private $invoice;

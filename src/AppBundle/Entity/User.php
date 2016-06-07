@@ -250,7 +250,7 @@ class User
     /**
      *@ORM\OneToMany(targetEntity="AppBundle\Entity\Invoice", mappedBy="user_invoice")
      */
-    private $invoice;
+    private $invoices;
 
 
 

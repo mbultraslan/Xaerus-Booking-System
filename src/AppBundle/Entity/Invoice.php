@@ -202,10 +202,10 @@ class Invoice
     /**
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\Service", mappedBy="invoice")
      */
-    private $service;
+    private $services;
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User", inversedBy="invoice")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User", inversedBy="invoices")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id", onDelete="CASCADE")
      */
     private $user_invoice;
